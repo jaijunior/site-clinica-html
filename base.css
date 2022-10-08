@@ -5,13 +5,14 @@ body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .wrapper {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: rgb(194, 221, 212);
 }
 .main {
     display: flex;
@@ -20,19 +21,51 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     padding: 10px 20px 0px;
+    border-right: 1px solid black ;
 }
 .header {
-    background-color: rgb(5, 108, 108);
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)100%), url(https://st.depositphotos.com/1526816/1377/v/600/depositphotos_13776221-stock-illustration-tooths.jpg);
     min-height: 150px;
+}
+.header h1, h3{
+    text-shadow: rgb(110, 156, 216) 1px 1px;
 }
 .content {
     background-color: white;
     min-height: 300px;
     padding: 20px;
 }
+.content table, th{
+    border: 1px solid black;
+    border-collapse: collapse ;
+}
+.content table tr td{
+    border: 1px solid black;
+}
+.content table tr:nth-child(even){
+    background-color: rgb(224, 224, 224);
+
+}
+.contatos{
+    display: flex;
+    justify-content: space-around;
+}
+.contatos2{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.contatos2 ifram{
+    flex: 0.1;
+}
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: rgb(244, 241, 255);
     min-height: 150px;
+    border-top: 1px solid black;
+}
+.footer ul{
+    list-style: none;
 }
